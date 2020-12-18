@@ -1,0 +1,625 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Nav bar */
+
+.mit-logo {
+  width: 20%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: orangered;
+  font-family: sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+color: darkblue;
+text-decoration: none;
+letter-spacing: 2px;
+font-weight: 900;
+font-size: 10px;
+}
+
+
+/* Slut Nav bar */
+
+
+
+/* header */
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  min-height: 90vh;
+  width: 100%;
+  padding-top: 25px;
+  justify-content: center;
+  background-color: darkblue;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .header-info {
+width: 100%;
+text-align: center;
+}
+
+.header .header-info .header-info-heading{
+font-size: 4rem;
+font-weight: 500;
+color: orangered;
+}
+
+.header .header-info .header-info-subheading {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2rem;
+  color: orange;
+  margin-top: 1rem;
+}
+
+.header .header-info .header-info-button {
+  margin-top: 10px;
+  padding: 2rem 5rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: orangered;
+  text-decoration: none;
+  letter-spacing: .2rem;
+  background-color: darkblue;
+}
+
+.header .header-img {
+  height: auto;
+  width: 80%;
+  margin-bottom: 3rem;
+}
+
+.header .header-img img {
+  height: 100%;
+  width: 100%;
+}
+/* Slut header */
+
+/* Om mig */
+
+.om-mig {
+  width: 80%;
+  min-width: 50vh;
+  padding: 10rem 5rem;
+  flex-direction: column;
+  font-size: 6rem;
+  color: orange;
+}
+
+.om-mig-info {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.4rem;
+}
+
+.om-mig .om-mig-info .om-mig-info-heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  color: orangered;
+}
+
+.om-mig .om-mig-info .om-mig-beskriv {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-top: 30px;
+}
+
+/* Slut Om mig */
+
+
+
+/* Mine projekter */
+
+.mine-projekter {
+  flex-direction: column;
+  min-height: 60vh;
+  padding: 10rem 5rem;
+}
+
+.mine-projekter .mine-projekter-header {
+  width: 100%;
+  text-align: center;
+}
+
+.mine-projekter .mine-projekter-header .mine-projekter-header-heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.mine-projekter .mine-projekter-header .mine-projekter-header-beskriv {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-top: 20px;
+}
+
+.mine-projekter .mine-projekter-info {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.mine-projekter .mine-projekter-info .projekt {
+  width: 100%;
+  min-height: 220px;
+  position: relative;
+  margin: 5px;
+}
+
+.mine-projekter .mine-projekter-info .projekt .projekt-kort {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  display: block;
+}
+
+.mine-projekter .mine-projekter-info .projekt .projekt-kort .projekt-forside, 
+.mine-projekter .mine-projekter-info .projekt .projekt-kort {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.014);
+  padding: 10px;
+}
+
+
+.mine-projekter .mine-projekter-info .projekt 
+.projekt-kort .projekt-forside .projekt-forside-heading {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+}
+
+.projekt-bagside-beskriv {
+  font-size: medium;
+}
+
+.selvportrætbillede {
+  align-items: center;
+  max-width: 80%;
+}
+
+.klimabombebillede {
+  width: 100%;
+}
+
+.klimabombevid {
+  width: 100%;
+  align-items: center;
+}
+
+.damerygergif {
+  width: 100%;
+}
+
+.redesignbillede {
+  width: 100%;
+}
+
+.stickmanlink {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+/* Mine projekter slut */
+
+
+
+/* Kontaktside */
+
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid orangered; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
+  
+}
+label [id="besked"], textarea {
+    height: 200px;
+}
+
+input[type=submit] {
+  background-color: darkblue;
+  color: orangered;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: lightblue;
+}
+
+.kontaktcontainer {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+
+/* Kontaktside slut */
+
+/* Footer */
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: orangered;
+  color: darkblue;
+  text-align: center;
+  padding-top: 10px;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.linkedinlogo {
+  width: 15%;
+  padding-bottom: 8px; 
+  padding-right: 30px;
+  
+}
+
+.instagramlogo {
+  width: 15%;
+  padding-bottom: 8px;
+  padding-left: 30px;
+}
+
+/* Slut Footer */
+
+
+
+/* Media quiery Ipad */
+
+@media screen and (min-width:768px) {
+
+/* Nav */
+
+  .mit-logo {
+    width: 20%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: orangered;
+    font-family: sans-serif;
+  }
+  
+  .nav-links {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+  color: darkblue;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 20px;
+  }
+
+/* Slut Nav */
+
+
+}
+
+/* Slut Media quiery Ipad */
+
+
+
+/* Media quiery Web */
+
+
+@media screen and (min-width:992px) {
+
+/* Nav bar */
+
+.mit-logo {
+  width: 10%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 6vh;
+  background-color: orangered;
+  font-family: sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+color: darkblue;
+text-decoration: none;
+letter-spacing: 2px;
+font-weight: 900;
+font-size: 24px;
+}
+
+
+/* Slut Nav bar */
+
+  /* header */
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  min-height: 80vh;
+  width: 100%;
+  padding-top: 50px;
+  justify-content: center;
+  background-color: darkblue;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .header-info {
+width: 100%;
+text-align: center;
+}
+
+.header .header-info .header-info-heading{
+font-size: 4rem;
+font-weight: 500;
+color: orangered;
+}
+
+.header .header-info .header-info-subheading {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2rem;
+  color: orange;
+  margin-top: 1rem;
+}
+
+.header .header-info .header-info-button {
+  margin-top: 10px;
+  padding: 2rem 5rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: orangered;
+  text-decoration: none;
+  letter-spacing: .2rem;
+  background-color: darkblue;
+}
+
+.header .header-img {
+  height: auto;
+  width: 35%;
+  margin-bottom: 3rem;
+}
+
+.header .header-img img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Slut header */
+
+/* Mine projekter */
+
+.mine-projekter {
+  flex-direction: column;
+  min-height: 60vh;
+  padding: 10rem 5rem;
+}
+
+.mine-projekter .mine-projekter-header {
+  width: 100%;
+  text-align: center;
+}
+
+.mine-projekter .mine-projekter-header .mine-projekter-header-heading {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.mine-projekter .mine-projekter-header .mine-projekter-header-beskriv {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-top: 20px;
+}
+
+.mine-projekter .mine-projekter-info {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.mine-projekter .mine-projekter-info .projekt {
+  width: 100%;
+  min-height: 220px;
+  position: relative;
+  margin: 5px;
+}
+
+.mine-projekter .mine-projekter-info .projekt .projekt-kort {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  display: block;
+}
+
+.mine-projekter .mine-projekter-info .projekt .projekt-kort .projekt-forside, 
+.mine-projekter .mine-projekter-info .projekt .projekt-kort {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.014);
+  padding: 10px;
+}
+
+
+.mine-projekter .mine-projekter-info .projekt 
+.projekt-kort .projekt-forside .projekt-forside-heading {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+}
+
+.projekt-bagside-beskriv {
+  font-size: medium;
+}
+
+.datingappbillede {
+  width: 15%;
+}
+
+.selvportrætbillede {
+  align-items: center;
+  max-width: 30%;
+}
+
+.klimabombebillede {
+  width: 50%;
+}
+
+.klimabombevid {
+  width: 100%;
+  align-items: center;
+}
+
+.damerygergif {
+  width: 50%;
+}
+
+.redesignbillede {
+  width: 50%;
+}
+
+.stickmanlink {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+/* Mine projekter slut */
+
+
+/* Footer */
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: orangered;
+  color: darkblue;
+  text-align: center;
+  padding-top: 10px;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.linkedinlogo {
+  width: 5%;
+  padding-bottom: 8px; 
+  padding-right: 30px;
+  
+}
+
+.instagramlogo {
+  width: 5%;
+  padding-bottom: 8px;
+  padding-left: 30px;
+}
+
+/* Slut Footer */
+
+}
+/* Slut Media quiery Web */
